@@ -1,0 +1,47 @@
+\documentclass{amsart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\title{Homework 2}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\noindent{\textbf{Question 1.}}
+	\begin{enumerate}[label=\alph*)]
+		\item 3 A's are printed, and any number of B's are printed
+		\item It is possible that process 3 does not run, so D can be printed zero times
+		\item Yes, with the processes running in the order 1, 4, 2, 2, 3, 1, 1
+	\end{enumerate}
+
+	$\newline$
+	\noindent{\textbf{Question 2.}}
+	\begin{enumerate}[label=\alph*)]
+		\item 	No; the progress requirement is not satisfied. If the flags are both set to true, and the while loops are reached, the program is stuck. Unless one process reaches its \texttt{flag[x] = false} line before the other reaches its while loop, both threads will be waiting indefinitely.
+		\item Yes, mutual exclusion is assured. While one process is in its critical section, its flag will remain true until it is finished, assuring the other process will continue waiting its turn in the while loop.
+	\end{enumerate}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
